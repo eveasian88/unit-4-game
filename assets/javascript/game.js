@@ -53,31 +53,33 @@ function win(){
     reset();
 }
 
-// // when player guesses right number they get a gif 
-// function reward(){
-//     var modal = buildRewardModal();
-//     $("#game-app").append(modal);
-// }
+// when player guesses right number they get a gif 
+function reward(){
+    var modal = buildRewardModal();
+    $("#game-app").append(modal);
+}
 
-// function buildRewardModal (){
-//     var modal = $("<div class='reward-modal'>");
-//     var messageContainer = $("<div class='reward-modal-message'>");
-//     var imageContainer = $("<div class='reward-image-container'>");
-//     var buttonContainer = $("<div class='reward-modal-button-container'>");
+function buildRewardModal (){
+    var modal = $("<div class='reward-modal'>");
+    var messageContainer = $("<div class='reward-modal-message'>");
+    var imageContainer = $("<div class='reward-image-container'>");
+    var buttonContainer = $("<div class='reward-modal-button-container'>");
 
-//     var message = $("<span>").text("Congratulations! You Won!");
-//     messageContainer.append(message);
+    var message = $("<span>").text("Congratulations! You Won!");
+    messageContainer.append(message);
 
-//     var image = $("<img src='assets/images/tiffanysbox.gif'>");
-//     imageContainer.append(image);
+    var image = $("<img src='assets/images/tiffanysbox.gif'>");
+    imageContainer.append(image);
 
-//     var button = $("<button>").text("Thank You!");
-//     buttonContainer.append(button);
-//     button.on(click,reset); // tutor helped with this part but it's not right (need to )
+    var button = $("<button>").text("Thank You!");
+    buttonContainer.append(button);
+    button.on(click,reset); // tutor helped with this part but it's not right (need to add more to finish)
 
-//     modal.append(messageContainer, imageContainer, buttonContainer);
-//     return modal;
-// }
+    modal.append(messageContainer, imageContainer, buttonContainer);
+    return modal;
+}
+
+
 
 // loss function to add to scoreboard
 function loss(){
