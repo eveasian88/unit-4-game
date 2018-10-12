@@ -5,29 +5,35 @@
     box-sizing: border-box;
 }
 
+.game-app {
+    width: 100vw;
+    height: 100vh;
+}
+
 #title {
     font-size: 44px;
     font-display: bold;
     text-align: center;
     width: 100%;
-    height: 110px;
+    height: 15%;
     background:#5cdfe5;
-    padding: 40px;
+    padding: 30px;
     font-family: asap, sans-serif;
 }
 
 #container {
-    background-image: url("../images/emerald.gif")
+    background-image: url("../images/emerald.gif");
+    background-repeat: no-repeat;
 }
 
 #directions {
     font-family: asap, sans-serif;
     color: black;
     width: 100%;
-    height: 300px;
+    height: 200%;
     background: #fffff;
     text-align: center;
-    padding: 20px 0;
+    padding: 80px 0;
 }
 
 #wins {
@@ -36,7 +42,7 @@
     width: 50%;
     background:#636363;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
     color: #fffff;
     font-size: 28px;
 }
@@ -47,7 +53,7 @@
     background: #199499;
     width: 50%;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
     font-size: 28px;
     border: 2px solid #a19e9e;
 }
@@ -58,7 +64,7 @@
     width: 50%;
     background:#199499;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
     font-size: 28px;
     border: 2px solid #a19e9e;
 }
@@ -69,7 +75,7 @@
     width: 50%;
     background:#636363;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
     font-size: 28px;
     color: #fffff;
 }
