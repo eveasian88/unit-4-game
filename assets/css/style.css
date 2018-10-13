@@ -38,7 +38,6 @@
 
 
 /* // testing modal here */
-
 .reward-modal {
     align-content: center;
     top: 0;
@@ -55,6 +54,7 @@
     border-radius:8px;
     background:#fff;
     padding:20px;
+    text-align: center;
   }
 
 .reward-image-container {
@@ -62,18 +62,19 @@
     background:rgba(0,0,0,0.2);
     border-radius:14px;
     padding:8px;
+    text-align: center;
 }
 
 .reward-modal-button-container {
-    background:url("../images/tiffany-diamond-heart.gif") 0 0 no-repeat;
+    background:url("../images/tiffany-diamond-heart.gif");
     width:24px;
     height:27px;
     display:block;
     text-indent:-9999px;
     top:-7px;
     right:-7px;
+    text-align: center;
   }
-
 /* // end modal test here  */
 
 #wins {
@@ -210,7 +211,7 @@ footer {
     font-size: 10px;
     color: white;
 
-    
+
 /* sm */ 
 @media screen and (min-width: 768px) { 
     body { font-size: 1em; } 
