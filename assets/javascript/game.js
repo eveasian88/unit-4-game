@@ -66,14 +66,23 @@ function buildRewardModal (){
     var buttonContainer = $("<div class='reward-modal-button-container'>");
 
     var message = $("<span>").text("Congratulations! You Won!");
-    messageContainer.append(message);
+    // messageContainer.append(message);
+    $("#directions").html("Congratulations! You Won!");
+
+    // copy above for you lose and add line in html line
 
     var image = $("<img src='assets/images/tiffanysbox.gif'>");
     imageContainer.append(image);
 
     var button = $("<button>").text("Thank You!");
     buttonContainer.append(button);
-    button.on(click,reset()); // tutor helped with this part but it's not right (need to add more to finish)
+
+    var directions = $("<div id=;directions'>");
+    buttonDirections.append(button);
+
+    var button = $("<img src ='assets/images/tiffany-diamond-heart.gif'>")
+    button.Button.append(image);
+    button.on(click,reset);
 
     modal.append(messageContainer, imageContainer, buttonContainer);
     return modal;
