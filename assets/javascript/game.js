@@ -75,7 +75,7 @@ function buildRewardModal (){
     var button = $("<button>").text("Thank You!");
     buttonContainer.append(button);
 
-    var directions = $("<div id=;directions'>");
+    var directions = $("<div id='directions'>");
     buttonDirections.append(button);
 
     var button = $("<img src ='assets/images/tiffany-diamond-heart.gif'>")
