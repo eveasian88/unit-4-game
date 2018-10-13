@@ -201,7 +201,16 @@
     margin-top:100px;
 }
 
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    color: white;
 
+    
 /* sm */ 
 @media screen and (min-width: 768px) { 
     body { font-size: 1em; } 
