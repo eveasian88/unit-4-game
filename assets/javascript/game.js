@@ -69,11 +69,6 @@ function buildRewardModal (){
     // messageContainer.append(message);
     $("#directions").html("Congratulations! You Won!");
 
-    // if player looses and add line in html line
-    var message = $("<span>").text("Sorry, you lost! Try Again!");
-    // messageContainer.append(message);
-    $("#directions").html("Sorry, you lost! Try Again!");
-
     var image = $("<img src='assets/images/tiffanysbox.gif'>");
     imageContainer.append(image);
 
