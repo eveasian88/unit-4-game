@@ -49,7 +49,7 @@ function reset(){
 function win(){
     wins++;
     $("#wins").text("wins: " + wins);
-    reward(); //gif reward here
+    reward(); // reward tiffanyBox gif here
     reset();
 }
 
@@ -69,7 +69,10 @@ function buildRewardModal (){
     // messageContainer.append(message);
     $("#directions").html("Congratulations! You Won!");
 
-    // copy above for you lose and add line in html line
+    // if player looses and add line in html line
+    var message = $("<span>").text("Sorry, you lost! Try Again!");
+    // messageContainer.append(message);
+    $("#directions").html("Sorry, you lost! Try Again!");
 
     var image = $("<img src='assets/images/tiffanysbox.gif'>");
     imageContainer.append(image);
