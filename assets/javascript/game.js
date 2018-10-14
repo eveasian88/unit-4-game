@@ -49,44 +49,44 @@ function reset(){
 function win(){
     wins++;
     $("#wins").text("wins: " + wins);
-    reward(); // reward tiffanyBox gif here
+    alert("Congratulations! You Won!")
     reset();
 }
 
 // when player guesses right number they get a gif 
-function reward(){
-    var modal = buildRewardModal();
-    $("#game-app").append(modal);
-}
+// function reward(){
+//     var modal = buildRewardModal();
+//     $("#game-app").append(modal);
+// }
 
-function buildRewardModal (){
-    var modal = $("<div class='reward-modal'>");
-    var messageContainer = $("<div class='reward-modal-message'>");
-    var imageContainer = $("<div class='reward-image-container'>");
-    var buttonContainer = $("<div class='reward-modal-button-container'>");
-    var buttonDirections = $("<div class='reward-modal-button-container'>");
+// function buildRewardModal (){
+//     var modal = $("<div class='reward-modal'>");
+//     var messageContainer = $("<div class='reward-modal-message'>");
+//     var imageContainer = $("<div class='reward-image-container'>");
+//     var buttonContainer = $("<div class='reward-modal-button-container'>");
+//     var buttonDirections = $("<div class='reward-modal-button-container'>");
     
 
-    var message = $("<span>").text("Congratulations! You Won!");
-    // messageContainer.append(message);
-    $("#directions").html("Congratulations! You Won!");
+//     var message = $("<span>").text("Congratulations! You Won!");
+//     // messageContainer.append(message);
+//     $("#directions").html("Congratulations! You Won!");
 
-    var image = $("<img src='assets/images/tiffanysbox.gif'>");
-    imageContainer.append(image);
+//     var image = $("<img src='assets/images/tiffanysbox.gif'>");
+//     imageContainer.append(image);
 
-    var directions = $("<div id='directions'>");
-    // buttonDirections.append(button);
+//     var directions = $("<div id='directions'>");
+//     // buttonDirections.append(button);
 
-    var button = $("<button>").text("Thank You!");
-    buttonContainer.append(button);
+//     var button = $("<button>").text("Thank You!");
+//     buttonContainer.append(button);
 
-    var button = $("<img src ='assets/images/tiffany-diamond-heart.gif'>")
-    button.Button.append(image);
-    button.on(click,reset);
+//     var button = $("<img src ='assets/images/tiffany-diamond-heart.gif'>")
+//     button.Button.append(image);
+//     button.on(click,reset);
 
-    modal.append(messageContainer, imageContainer, buttonContainer);
-    return modal;
-}
+//     modal.append(messageContainer, imageContainer, buttonContainer);
+//     return modal;
+// }
 
 
 
