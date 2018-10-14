@@ -64,6 +64,8 @@ function buildRewardModal (){
     var messageContainer = $("<div class='reward-modal-message'>");
     var imageContainer = $("<div class='reward-image-container'>");
     var buttonContainer = $("<div class='reward-modal-button-container'>");
+    var buttonDirections = $("<div class='reward-modal-button-container'>");
+    
 
     var message = $("<span>").text("Congratulations! You Won!");
     // messageContainer.append(message);
@@ -72,11 +74,11 @@ function buildRewardModal (){
     var image = $("<img src='assets/images/tiffanysbox.gif'>");
     imageContainer.append(image);
 
+    var directions = $("<div id='directions'>");
+    // buttonDirections.append(button);
+
     var button = $("<button>").text("Thank You!");
     buttonContainer.append(button);
-
-    var directions = $("<div id='directions'>");
-    buttonDirections.append(button);
 
     var button = $("<img src ='assets/images/tiffany-diamond-heart.gif'>")
     button.Button.append(image);
