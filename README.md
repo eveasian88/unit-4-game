@@ -1,4 +1,5 @@
 Collect-Tiffany's-Crystals
+
 This is a simple game that allows the player to select from four crystals with different values. The object of the game is for the player to get their total score to match the random target number given in the beginning of the game.
 
 How to Play the Game:
