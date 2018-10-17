@@ -1,151 +1,152 @@
 const pinkCrystal_div = document.getElementById("btn1");
 const clearCrystal_div = document.getElementById("btn2");
-const purplerystal_div = document.getElementById("btn3");
+const purpleCrystal_div = document.getElementById("btn3");
 const multiCrystal_div = document.getElementById("btn4");
+
 var wins = 0;
 var losses = 0;
 var userScore = 0;
 
-$( document ).ready(function(){
+$(document).ready(function () {
 
 
-// random computer number to get to
-var computerScore = Math.floor(Math.random() * (102) + 19);
-    console.log(computerScore); 
-$('#computerScore').text("Match This Score: " + computerScore);
+    // random computer number to get to
+    var computerScore = Math.floor(Math.random() * (102) + 19);
+    console.log(computerScore);
+    $('#computerScore').text("Match This Score: " + computerScore);
 
 
-// random number for button 
-var btn1 = Math.floor(Math.random() * (11) + 1);
-var btn2 = Math.floor(Math.random() * (11) + 1);
-var btn3 = Math.floor(Math.random() * (11) + 1);
-var btn4 = Math.floor(Math.random() * (11) + 1);
+    // random number for button 
+    var btn1 = Math.floor(Math.random() * (11) + 1);
+    var btn2 = Math.floor(Math.random() * (11) + 1);
+    var btn3 = Math.floor(Math.random() * (11) + 1);
+    var btn4 = Math.floor(Math.random() * (11) + 1);
 
-console.log("This is a random btn 1 number ====", btn1);
-console.log("This is a random btn 2 number ====", btn2);
-console.log("This is a random btn 3 number ====", btn3);
-console.log("This is a random btn 4 number ====", btn4);
-
-
-//resets the game
-function reset(){
-    computerScore =0;
-    userScore = 0;
-    btn1 = Math.floor(Math.random() * (11) + 1);
-    btn2 = Math.floor(Math.random() * (11) + 1);
-    btn3 = Math.floor(Math.random() * (11) + 1);
-    btn4 = Math.floor(Math.random() * (11) + 1);
     console.log("This is a random btn 1 number ====", btn1);
     console.log("This is a random btn 2 number ====", btn2);
     console.log("This is a random btn 3 number ====", btn3);
     console.log("This is a random btn 4 number ====", btn4);
-    computerScore = Math.floor(Math.random() * (102) + 19);
-    console.log(computerScore);
-    $('#userScore').text("Your Current Score: " + userScore);
-    $('#computerScore').text("Match This Score: " + computerScore);
-}
-
-// win function to add to scoreboard
-function win(){
-    wins++;
-    $("#wins").text("wins: " + wins);
-    alert("Congratulations! You Won a Tiffany's & Co. Raw Crystal!")
-    reset();
-}
-
-// when player guesses right number they get a gif 
-// function reward(){
-//     var modal = buildRewardModal();
-//     $("#game-app").append(modal);
-// }
-
-// function buildRewardModal (){
-//     var modal = $("<div class='reward-modal'>");
-//     var messageContainer = $("<div class='reward-modal-message'>");
-//     var imageContainer = $("<div class='reward-image-container'>");
-//     var buttonContainer = $("<div class='reward-modal-button-container'>");
-//     var buttonDirections = $("<div class='reward-modal-button-container'>");
-    
-
-//     var message = $("<span>").text("Congratulations! You Won!");
-//     // messageContainer.append(message);
-//     $("#directions").html("Congratulations! You Won!");
-
-//     var image = $("<img src='assets/images/tiffanysbox.gif'>");
-//     imageContainer.append(image);
-
-//     var directions = $("<div id='directions'>");
-//     // buttonDirections.append(button);
-
-//     var button = $("<button>").text("Thank You!");
-//     buttonContainer.append(button);
-
-//     var button = $("<img src ='assets/images/tiffany-diamond-heart.gif'>")
-//     button.Button.append(image);
-//     button.on(click,reset);
-
-//     modal.append(messageContainer, imageContainer, buttonContainer);
-//     return modal;
-// }
 
 
-
-// loss function to add to scoreboard
-function loss(){
-    losses++;
-    $("#losses").text("losses: " + losses);
-    reset();
-}
-// jQuery gem button 1 with functions to add to score
-$("#btn1").on("click", function(){
-    userScore = (userScore + btn1);
-    $('#userScore').text("Your Current Score: " + userScore);
-
-    if (userScore === computerScore) {
-        win();
-    }else if (userScore > computerScore) {
-        loss();
+    //resets the game
+    function reset() {
+        computerScore = 0;
+        userScore = 0;
+        btn1 = Math.floor(Math.random() * (11) + 1);
+        btn2 = Math.floor(Math.random() * (11) + 1);
+        btn3 = Math.floor(Math.random() * (11) + 1);
+        btn4 = Math.floor(Math.random() * (11) + 1);
+        console.log("This is a random btn 1 number ====", btn1);
+        console.log("This is a random btn 2 number ====", btn2);
+        console.log("This is a random btn 3 number ====", btn3);
+        console.log("This is a random btn 4 number ====", btn4);
+        computerScore = Math.floor(Math.random() * (102) + 19);
+        console.log(computerScore);
+        $('#userScore').text("Your Current Score: " + userScore);
+        $('#computerScore').text("Match This Score: " + computerScore);
     }
-})
 
-
-// jQuery gem button 2 with functions to add to score
-$("#btn2").on("click", function(){
-    userScore = userScore + btn2;
-    $('#userScore').text("Your Current Score: " + userScore);
-
-    if (userScore === computerScore) {
-        win();
-    }else if (userScore > computerScore) {
-        loss();
+    // win function to add to scoreboard
+    function win() {
+        wins++;
+        $("#wins").text("wins: " + wins);
+        alert("Congratulations! You Won a Tiffany's & Co. Raw Crystal!")
+        reset();
     }
-})
+
+    // when player guesses right number they get a gif 
+    // function reward(){
+    //     var modal = buildRewardModal();
+    //     $("#game-app").append(modal);
+    // }
+
+    // function buildRewardModal (){
+    //     var modal = $("<div class='reward-modal'>");
+    //     var messageContainer = $("<div class='reward-modal-message'>");
+    //     var imageContainer = $("<div class='reward-image-container'>");
+    //     var buttonContainer = $("<div class='reward-modal-button-container'>");
+    //     var buttonDirections = $("<div class='reward-modal-button-container'>");
 
 
-// jQuery gem button 3 with functions to add to score
-$("#btn3").on("click", function(){
-    userScore = userScore + btn3;
-    $('#userScore').text("Your Current Score: " + userScore);
+    //     var message = $("<span>").text("Congratulations! You Won!");
+    //     // messageContainer.append(message);
+    //     $("#directions").html("Congratulations! You Won!");
 
-    if (userScore === computerScore) {
-        win();
+    //     var image = $("<img src='assets/images/tiffanysbox.gif'>");
+    //     imageContainer.append(image);
 
-    }else if (userScore > computerScore) {
-        loss();
+    //     var directions = $("<div id='directions'>");
+    //     // buttonDirections.append(button);
+
+    //     var button = $("<button>").text("Thank You!");
+    //     buttonContainer.append(button);
+
+    //     var button = $("<img src ='assets/images/tiffany-diamond-heart.gif'>")
+    //     button.Button.append(image);
+    //     button.on(click,reset);
+
+    //     modal.append(messageContainer, imageContainer, buttonContainer);
+    //     return modal;
+    // }
+
+
+
+    // loss function to add to scoreboard
+    function loss() {
+        losses++;
+        $("#losses").text("losses: " + losses);
+        reset();
     }
-})
+    // jQuery gem button 1 with functions to add to score
+    $("#btn1").on("click", function () {
+        userScore = (userScore + btn1);
+        $('#userScore').text("Your Current Score: " + userScore);
+
+        if (userScore === computerScore) {
+            win();
+        } else if (userScore > computerScore) {
+            loss();
+        }
+    })
 
 
-// jQuery gem button 4 with functions to add to score
-$("#btn4").on("click", function(){
-    userScore = userScore + btn4;
-    $('#userScore').text("Your Current Score: " + userScore);
+    // jQuery gem button 2 with functions to add to score
+    $("#btn2").on("click", function () {
+        userScore = userScore + btn2;
+        $('#userScore').text("Your Current Score: " + userScore);
 
-    if (userScore === computerScore) {
-        win();
-    }else if (userScore > computerScore) {
-        loss();
-    }
-})
+        if (userScore === computerScore) {
+            win();
+        } else if (userScore > computerScore) {
+            loss();
+        }
+    })
+
+
+    // jQuery gem button 3 with functions to add to score
+    $("#btn3").on("click", function () {
+        userScore = userScore + btn3;
+        $('#userScore').text("Your Current Score: " + userScore);
+
+        if (userScore === computerScore) {
+            win();
+
+        } else if (userScore > computerScore) {
+            loss();
+        }
+    })
+
+
+    // jQuery gem button 4 with functions to add to score
+    $("#btn4").on("click", function () {
+        userScore = userScore + btn4;
+        $('#userScore').text("Your Current Score: " + userScore);
+
+        if (userScore === computerScore) {
+            win();
+        } else if (userScore > computerScore) {
+            loss();
+        }
+    })
 
 })
