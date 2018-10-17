@@ -49,7 +49,7 @@ function reset(){
 function win(){
     wins++;
     $("#wins").text("wins: " + wins);
-    alert("Congratulations! You Won!")
+    alert("Congratulations! You Won a Tiffany's & Co. Raw Crystal!")
     reset();
 }
 
