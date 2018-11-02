@@ -11,7 +11,7 @@ $(document).ready(function () {
 
 
     // random computer number to get to
-    var computerScore = Math.floor(Math.random() * (102) + 19);
+    var computerScore = Math.floor((Math.random() * 10) + 19);
     console.log(computerScore);
     $('#computerScore').text("Match This Score: " + computerScore);
 
@@ -53,42 +53,6 @@ $(document).ready(function () {
         alert("Congratulations! You Won a Tiffany's & Co. Raw Crystal!")
         reset();
     }
-
-    // when player guesses right number they get a gif 
-    // function reward(){
-    //     var modal = buildRewardModal();
-    //     $("#game-app").append(modal);
-    // }
-
-    // function buildRewardModal (){
-    //     var modal = $("<div class='reward-modal'>");
-    //     var messageContainer = $("<div class='reward-modal-message'>");
-    //     var imageContainer = $("<div class='reward-image-container'>");
-    //     var buttonContainer = $("<div class='reward-modal-button-container'>");
-    //     var buttonDirections = $("<div class='reward-modal-button-container'>");
-
-
-    //     var message = $("<span>").text("Congratulations! You Won!");
-    //     // messageContainer.append(message);
-    //     $("#directions").html("Congratulations! You Won!");
-
-    //     var image = $("<img src='assets/images/tiffanysbox.gif'>");
-    //     imageContainer.append(image);
-
-    //     var directions = $("<div id='directions'>");
-    //     // buttonDirections.append(button);
-
-    //     var button = $("<button>").text("Thank You!");
-    //     buttonContainer.append(button);
-
-    //     var button = $("<img src ='assets/images/tiffany-diamond-heart.gif'>")
-    //     button.Button.append(image);
-    //     button.on(click,reset);
-
-    //     modal.append(messageContainer, imageContainer, buttonContainer);
-    //     return modal;
-    // }
-
 
 
     // loss function to add to scoreboard
