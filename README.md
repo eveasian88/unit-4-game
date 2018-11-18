@@ -3,5 +3,3 @@ There are four raw Tiffany's crystals. Select each one to find out it's value. B
 
 ## Technologies Utilized
 HTML5 • CSS3 • JavaScript • jQuery
-
-https://eveasian88.github.io/unit-4-game/
